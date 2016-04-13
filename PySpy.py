@@ -3,7 +3,7 @@ import cookielib
 import urllib
 import urlparse
 # Browser
-visited = [url]
+
 
 
 br = mechanize.Browser()
@@ -34,6 +34,7 @@ br.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.
 
 # create lists for the urls in queue and visited urls
 urls = [url]
+visited = []
 # Since the amount of urls in the list is dynamic
 #   we just let the spider go until A url doesnt
 #   have new ones on the webpage
